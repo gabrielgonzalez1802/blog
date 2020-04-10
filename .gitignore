@@ -1,0 +1,8 @@
+#Configuraciones del IDE
+/.settings/
+.buildpath
+.project
+
+#bases de datos
+*.sql
+
