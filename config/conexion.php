@@ -1,8 +1,8 @@
 <?php
 class Conexion {
-	private $dbname = "blog";
-	private $password = "";
-	private $username = "root";
+	private $dbname = "id7666562_mrns";
+	private $password = "24663634";
+	private $username = "id7666562_ggonzalez";
 	private $servername = "localhost";
 
 	public function getServername() {
