@@ -5,10 +5,19 @@ class Conex extends Conexion{
 	private $password;
 	private $username;
 	private $servername;
+	private $port;
 	private $conn;
 
 	public function getConn() {
 		return $this->conn;
+	}
+
+	public function getPort() {
+		return $this->port;
+	}
+	
+	public function setPort($value) {
+		$this->port = $value;
 	}
 
 	public function getServername() {
@@ -43,6 +52,7 @@ class Conex extends Conexion{
 		$this->username = parent::getUsername();
 		$this->password = parent::getPassword();
 		$this->dbname = parent::getDBname();
+		$this->port = parent::getPort();
 		date_default_timezone_set('America/New_York');
 		setlocale(LC_ALL,"es_ES");
 		// Create connection
